@@ -1,0 +1,218 @@
+<!--Name: MENA ALICE      Course: HAI113     Semester: 1.2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics and Perfume Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MENA ALICE</h1>
+        <h3>Mi_A_mi Beauty Palour</h3>
+        <p>Your beauty is our business!!</p>
+        <img src="products/lipstick2.jpeg" alt="Header Image">
+    </header>
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showregform()">Client Account</a></li>
+                <li><a href="#" onclick="show_products_list()">Our Product Range</a></li>
+                <li><a href="#" onclick="showAbout()">About Us</a></li>
+                <li><a href="#" onclick="showProducts()">Shop</a></li>
+                <li><a href="#" onclick="showCart()">Cart</a></li>
+            </ul>
+          </nav>
+        <main>
+            <section id="home">
+                <h2>Your trusted plug for all your beauty products and scent Variaties!!</h2>
+                <h3>We love shopping with you</h3>
+                <p>Kindly navigate through our site and do not hesitate to contact us for more info</p>
+                <!-- Audio Clip -->
+                <audio controls>
+                <source src="cosmetics.mp3" type="audio/mpeg">
+                </audio>
+
+                <br>
+
+                <!-- Video Clip -->
+                <video controls poster="products/lipstick5.jpeg">
+                <source src="cosmeticsvid.mp4" type="video/mp4">
+                Your browser does not support the video element.
+                </video>
+            </section>
+
+            <section id="products">
+                <h2>Shop</h2>
+                <!-- Product cards will be dynamically added here using JavaScript -->
+            </section>
+
+            <section id="product_list">
+                <table>
+                    <caption>Product and Service Packages</caption>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>EDP Perfumes</td>
+                      <td>$9.20</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Body Sprays</td>
+                      <td>$4.99</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Matte Lipstick</td>
+                      <td>$3.99</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Pencil EyeLiners</td>
+                      <td>$1.99</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Vanishing Creams</td>
+                      <td>$3.99</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Mascara</td>
+                      <td>$4.99</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Face Scrubs</td>
+                      <td>$7.99</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Lip Balms</td>
+                      <td>$2.99</td>
+                    </tr>
+                  </table>
+            </section>
+
+            <section id="cart">
+                <h2>
+                <img src="carrt2.jpeg">
+                <br>
+                 Your Cart</h2>
+                <p>Total: <span id="cart-total">$0.00</span></p>
+                <!-- Cart items will be dynamically added here using JavaScript -->
+                <button id="purchase-button">PURCHASE</button>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <div id="aboutMe">
+                    <h4>About Me</h4>
+                    <p>
+                        Hello, Dear Partner! My name is Mena Alice, and I am a passionate cosmetics seller. I have always been fascinated by the transformative power of makeup and skincare products. With several years of experience in the beauty industry, I have honed my expertise in curating high-quality and innovative cosmetic products for my valued customers.
+                      </p>
+                      <p>
+                        What sets me apart is my commitment to helping individuals feel confident and express their unique beauty. I believe that cosmetics are not just about enhancing features, but also about embracing self-expression and celebrating individuality. I take pride in offering a diverse range of products that cater to different skin tones, types, and personal styles.
+                      </p>
+                      <p>
+                        My goal is to create a personalized and enjoyable shopping experience for each customer. I am dedicated to providing expert advice, recommending products tailored to specific needs, and addressing any concerns or questions. I strive to build long-lasting relationships with my clients by delivering exceptional customer service and ensuring their satisfaction.
+                      </p>
+                      <p>
+                        As a cosmetics enthusiast myself, I stay up-to-date with the latest beauty trends, techniques, and ingredients. This enables me to handpick the finest products that not only deliver outstanding results but also prioritize safety, sustainability, and ethical practices. I am committed to promoting clean beauty and supporting brands that share these values.
+                      </p>
+                      <p>
+                        When I'm not immersed in the world of cosmetics, you can find me experimenting with new makeup looks, exploring skincare routines, and attending industry events to expand my knowledge. I am passionate about empowering others through beauty and encouraging self-care rituals that nurture both the body and the soul.
+                      </p>
+                      <p>
+                        Thank you for visiting my online store. I am thrilled to be your trusted partner on your beauty journey. Feel free to reach out to me for any assistance or product recommendations. Let's embrace the power of cosmetics together and unlock your inner radiance!
+                      </p>
+                    </div>
+                <div id="hobbies">
+                <h4>Hobbies</h4>
+                <ol>
+                    <li>Exploring the outdoors</li>
+                    <li>Hiking in the mountains</li>
+                    <li>Capturing nature through photography</li>
+                    <li>And of cause keeping up with beauty trends so you and I can glow!!!</li>
+                </ol>
+                <p>Sincerely, Mi_A_mi Beauty Palour founder...</p>
+                </div>
+            </section>
+
+            <section id="regform">
+                    <h2>Registration Form</h2>
+                  <body>
+                    <form action="post" id="registration-form">
+                      <label for="first-name">First Name:</label>
+                      <input type="text" id="first-name" name="first-name" required><br>
+                  
+                      <label for="last-name">Last Name:</label>
+                      <input type="text" id="last-name" name="last-name" required><br>
+                  
+                      <label for="phone-number">Phone Number:</label>
+                      <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]+" required><br>
+                  
+                      <label for="email">Email Address:</label>
+                      <input type="email" id="email" name="email" required><br>
+                  
+                      <label for="confirm-email">Email Address Again:</label>
+                      <input type="email" id="confirm-email" name="confirm-email" required><br>
+                  
+                      <label for="date-of-birth">Date of Birth:</label>
+                      <input type="date" id="date-of-birth" name="date-of-birth" required><br>
+                  
+                      <label for="client-type">Client Type:</label>
+                      <select id="client-type" name="client-type">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                      </select><br>
+                  
+                      <label for="web-technologies">Web Technologies:</label>
+                      <select id="web-technologies" name="web-technologies" multiple>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <!-- Add more options as needed -->
+                      </select><br>
+                  
+                      <label for="mailing-list">Add to Mailing List:</label>
+                      <input type="checkbox" id="mailing-list" name="mailing-list"><br>
+                  
+                      <label for="terms-conditions">Accept Terms & Conditions:</label>
+                      <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                      <a href="terms.html" target="_blank">Terms & Conditions</a><br>
+                  
+                      <input type="submit" value="Submit">
+                    </form>
+                  
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <address>
+                <p><img src="products/map.png"> 88 Malta Road, Mutare</p>
+                <p><img src="products/call.png"> or <img src="products/whatsapp.png"> +26377389955</p>
+                <p><img src="products/fb.png"> Mi_A_mi Beauty Palour</p>
+                <p><img src="products/ig.jpeg"> Mi_A_mi Beauty Palour</p>
+                <p><img src="products/x.png"> Mi_A_mi Beauty Palour</p>
+                <p><img src="products/gmail.png"> infomation@miami.co.zw</p>
+                
+            </address>
+        </div>
+        <p>&copy; 2024 Mi_A_mi Scent and Beauty Palour</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

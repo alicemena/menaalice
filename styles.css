@@ -1,0 +1,237 @@
+/* Name: MENA ALICE      Course: HAI113     Semester: 1.2 */
+
+/* Global styles */
+
+#content {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ca8eb6;
+  }
+  
+  header {
+    background-color: #ca8eb6;
+    color: #050505;
+    padding: 20px;
+    text-align: center;
+    background-size: 20ch;
+    font-family: Lucida, cursive;
+  }
+
+  header img{
+    width: 2.5cm;
+    height: 1.5cm;
+    image-orientation: 5deg;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
+  }
+  
+  nav ul li {
+    flex: 1;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: 0.4s ease-in-out ;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding-bottom: 300px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+  }
+
+  footer address img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Home page styles */
+  
+  #home{
+    background-image: url("products/lipstick4.jpeg");
+    text-align: center;
+  }
+  #home h2 {
+    color: #4d0343;
+    font-size: 40pt;
+  }
+  
+  table, th, td{
+    border: #080808 2px solid;
+    border-collapse: collapse;
+ }
+
+ video{
+  border: #ccc;
+  border-radius: 50px;
+ }
+
+  /* Products page styles */
+  
+  #products {
+    display: none;
+  }
+  
+  .product-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-card h3 {
+    margin-top: 0;
+  }
+  
+  .product-card p {
+    margin-bottom: 10px;
+  }
+  
+  /* Cart page styles */
+  
+  #cart{
+    text-align: center;
+  }
+  
+  /* About page styles */
+  
+  #about {
+    display: none;
+  }
+  
+  /* Contact page styles */
+  
+  #contact {
+    color: #193c9c;
+  }
+  
+  #contact h2 {
+    color: #080808;
+  }
+  address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color:#193c9c;
+  }
+  nav ul li a:active{
+    text-decoration: underline;
+    color:#193c9c;
+  }
+
+  h1 {
+    font-size: 32pt;
+  }
+
+  form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    margin-left: 80px ;
+   
+  }
+
+  table{
+    margin: 40px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="email"],
+  form select,
+  form input[type="checkbox"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #regform h2{
+    margin-left: 180px;
+  }
+
+
+.content div {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Styles for screens smaller than typical tablets */
+
+@media only screen and (max-width: 768px) {
+  .content div {
+    align-items: center;
+  }
+  
+  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Styles for phones */
+
+@media only screen and (max-width: 480px) {
+  .content div {
+    width: auto;
+  }
+  
+  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .about-me p:not(:first-child) {
+    display: none;
+  }
+}
